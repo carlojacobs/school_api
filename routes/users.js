@@ -2,10 +2,7 @@ var express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv');
 var router = express.Router();
-
-dotenv.config();
 
 // Import user model
 const User = require('../models/userModel');

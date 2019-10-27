@@ -9,6 +9,10 @@ const schemas = {
 	login: Joi.object({
 		email: Joi.string().min(6).required().email(),
 		password: Joi.string().min(6).required()
+	}),
+	newSchool: Joi.object({
+		name: Joi.string().required(),
+		periods: Joi.number().required()
 	})
 }
 
